@@ -60,7 +60,7 @@ function About() {
                     name="Scooby"
                     paragraphs={[
                         "Scooby is a pitbull terrior mutt from Morganton, North Carolina. Scooby was adopted from a shelter in 2019.",
-                        "Scooby was one of the most energetic dog on this planet. He was extremely strong and fast. Paul and Makayla knew Scooby was the one for them when he jumped and did a backflop off of Makayla. She was frightened, but Paul was sold.",
+                        "Scooby was one of the most energetic dogs on this planet. He was extremely strong and fast. Paul and Makayla knew Scooby was the one for them when he jumped and did a backflip off of Makayla. She was frightened, but Paul was sold.",
                         "Scooby is no longer with us, but without Scooby, Adopt would have never existed. According to Paul, he was the best dog he ever had."
                     ]}
                     />

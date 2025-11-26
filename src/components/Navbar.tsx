@@ -29,7 +29,7 @@ function Navbar({ transparent = false }: NavbarProps) {
                 <li><Link to="/shelters">SHELTERS</Link></li>
                 <li><Link to="/about">ABOUT</Link></li>
                 <li><Link to="/donate">DONATE</Link></li>
-                <li><Link to="/signin" id="nav-button">Log In</Link></li>
+                <li><Link to="/login" id="nav-button">Log In</Link></li>
             </ul>
         </nav>
     )

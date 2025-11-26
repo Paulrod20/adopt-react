@@ -1,9 +1,19 @@
+import Navbar from '../components/Navbar';
+import '../styles/Shelters.css';
+
 function Shelters() {
-     return (
-        <div>
-            <h1>Shelters Page</h1>
+  return (
+    <div className="shelters-page">
+      <Navbar />
+      
+      <main className="shelters-content">
+        <div className="map-container">
+          {/* Map will go here */}
+          <p>Map coming soon...</p>
         </div>
-    )
+      </main>
+    </div>
+  );
 }
 
 export default Shelters;
