@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page nav ul li a:hover {
+  color: white !important;
+}
+
+.about-hero {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 160px 8% 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-hero-left,
+.about-hero-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-hero-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.about-hero-right p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.top-container {
+  background-color: #f9f9f9;
+}
+
+.bio-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 80px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 120px 5% 60px;
+  }
+  
+  .about-hero-left h1 {
+    font-size: 32px;
+  }
+  
+  .about-hero-right p {
+    font-size: 16px;
+  }
+}
