@@ -1,7 +1,7 @@
 import { Builder, Browser, By, until, WebDriver } from "selenium-webdriver";
 import { host, waitTime } from "./constants"
 
-let driver: WebDriver;
+export let driver: WebDriver;
 
 export async function buildDriver() {
     driver = await new Builder().forBrowser(Browser.CHROME).build();
@@ -17,6 +17,10 @@ export async function stopDriver() {
     await driver.quit();
 }
 
+export async function sleep(ms: number) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 export async function getElementById(id: string) {
     const element = await driver.wait(until.elementLocated(By.id(id)), waitTime);
     return await driver.wait(until.elementIsVisible(element), waitTime);
@@ -27,4 +31,3 @@ export async function getElementByXPath(xpath: string) {
     return await driver.wait(until.elementIsVisible(element), waitTime);
 }
 
- 
