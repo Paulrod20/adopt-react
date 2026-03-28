@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import ShelterMap from '../components/shelters/ShelterMap';
+import ShelterCard from '../components/shelters/ShelterCard';
 import { mockShelters } from '../data/mockShelters';
 import '../styles/Shelters.css';
 
@@ -8,10 +9,17 @@ function Shelters() {
     <div className="shelters-page">
       <Navbar />
 
-      <main className="shelters-content">
-        <div className="map-container">
+      <main>
+        <section className="map-section">
           <ShelterMap shelters={mockShelters} />
-        </div>
+        </section>
+
+        <section className="shelters-list">
+          {mockShelters.map((shelter) => (
+            <ShelterCard key={shelter.id} shelter={shelter} />
+          ))}
+        </section>
+
       </main>
     </div>
   );

@@ -3,6 +3,10 @@
   background-color: var(--base-color);
 }
 
+.shelters-page main {
+  padding-top: 140px;
+}
+
 .shelters-page nav {
   background-color: var(--accent-color);
 }
@@ -15,17 +19,15 @@
   color: white;
 }
 
-.shelters-content {
-  padding: 160px 2rem 2rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.map-section {
+  height: 60vh;
+  padding: 0px 20px;
 }
 
-.map-container {
-  width: 100%;
-  max-width: 1200px;
-  height: 70vh;
-  border-radius: 20px;
-  overflow: hidden;
+.shelters-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
 }
+
